@@ -11,6 +11,7 @@ entrenamiento_sisfall.ipynb: Notebook principal que documenta todo el proceso: c
 
 Ejecución del .jpynb:
 Este notebook está diseñado con una arquitectura híbrida para garantizar su reproducibilidad técnica tanto en mi entorno de nube (AWS) como en entornos locales para su evaluación (Google Colab).
+El código de las celdas de busqueda de los mejores parametros con GridSearch, tanto para Random Forest como para XGBoost está como comentario para que no se ejecute cada vez dado que tarda mucho tiempo.
 
 Librerías principales: Pandas, Scikit-learn, XGBoost, Boto3, Joblib
 
