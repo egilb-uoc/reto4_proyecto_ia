@@ -1,2 +1,17 @@
 # reto4_proyecto_ia
 Repositorio para el jpynb del reto 4 del proyecto de IA
+Reto 4 - Proyecto IA: Detección de Caídas (SisFall)
+
+Este repositorio contiene la lógica de entrenamiento, validación y exportación de un modelo de Machine Learning (XGBoost) para la detección automática de caídas en personas mayores, utilizando el dataset de SisFall.
+
+Estructura del Repositorio:
+processed/: Contiene una muestra de los datos originales (formato CSV) que ya han pasado por la fase de limpieza y preprocesamiento, listos para ser consumidos por el modelo. Son los mismos archivos que están en la carpeta processed/ del bucket sisfall de S3. Están en esta carpeta para que se puedan reproducir localmente luego en el jupyter notebook clonando el repositorio de github.
+
+entrenamiento_sisfall.ipynb: Notebook principal que documenta todo el proceso: carga híbrida (S3/Local), entrenamiento del modelo Random Forest, entrenamiento del modelo XGBoost, optimización de hiperparámetros (GridSearch) y evaluación (Matriz de Confusión y Casos de Uso).
+
+Ejecución del .jpynb:
+Este notebook está diseñado con una arquitectura híbrida para garantizar su reproducibilidad técnica tanto en mi entorno de nube (AWS) como en entornos locales para su evaluación (Google Colab).
+
+Librerías principales: Pandas, Scikit-learn, XGBoost, Boto3, Joblib
+
+Entornos: AWS SageMaker, Google Colab
